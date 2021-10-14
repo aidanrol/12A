@@ -9,13 +9,16 @@ while True:
         if file == ".git" or not file.endswith(".py"): 
             files.remove(file)
     os.system('cls' if os.name == 'nt' else 'clear')        
-    print("Select an option:")
+    print("Select an option (or type exit):")
     for file in files:
         index = files.index(file)
         print(f"({index + 1}) {file}")
 
-    selection = int(input("\nSelection: "))
+    selection = input("\nSelection: ")
 
-    os.system(f"python3 {files[selection - 1]}")
+    if selection == "exit":
+        break
+    else:
+        os.system(f"python3 {files[int(selection) - 1]}")
 
 

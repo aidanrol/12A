@@ -5,3 +5,5 @@ def vat(price):
     return price * 1.2
 
 print(f"Item price with VAT: {vat(price)}")
+
+input("Press ENTER to continue")

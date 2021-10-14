@@ -12,3 +12,6 @@ while dice != 6:
 
 print(f"It took you {count} rolls to get a 6")
 
+input("Press ENTER to continue")
+
+hola me llamo aidan
